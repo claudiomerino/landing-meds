@@ -1,11 +1,13 @@
 
 	.button {
-		font-weight: 700;
+		background-image: linear-gradient(to bottom, #f49738 0%,#d98427 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		background-color: #e68b2e;
 		box-shadow: 0px 2px 2px 0px #522b60;
+		font-weight: 700;
 		text-transform: uppercase;
-		background-image: linear-gradient(to bottom, #8c52a1 0%,#6a377d 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-		&:hover {
-			background-color: #633971;
+		&:hover,
+		&:focus {
+			background-color: #e68b2e;
 			background-image: none;
 		}
 	}
