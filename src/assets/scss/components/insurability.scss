@@ -1,7 +1,5 @@
 
 	.insurability {
-		border-bottom: 4px solid #2d75c7;
-		border-top: 4px solid #2d75c7;
 		padding: 3rem 0;
 	}
 
@@ -26,6 +24,10 @@
 		font-weight: bolder;
 	}
 
+	.insurability__features {
+		padding: 0 1.6rem;
+	}
+
 	.insurability__row {
 		.columns {
 			&:first-of-type {
@@ -42,6 +44,10 @@
 
 		.insurability__box {
 			text-align: center;
+		}
+
+		.insurability__features {
+			padding: 0 3rem;
 		}
 
 		.insurability__row {

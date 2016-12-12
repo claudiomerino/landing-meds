@@ -119,26 +119,33 @@
 		text-transform: uppercase;
 	}
 
-	.coverage__intro {
-		.secureDateCoverage {
-			margin-bottom: 5rem;
-		}
-	}
 
-	.coverage__intro__date {
+	.tabs__coverage__date {
 		margin-bottom: 1rem;
 		margin-top: 3rem;
 	}
 
-	.coverage__intro__description {
+	.tabs__coverage__description {
 		margin-bottom: 0;
 	}
 
-	.coverage__intro__select {
+	.tabs__coverage__container {
+		padding-top: 0;
+	}
+
+	.tabs__coverage__list__container {
+		padding: 0;
+	}
+
+	.tabs__coverage__footer__container {
+		padding-top: 0;
+	}
+
+	.tabs__coverage__select {
 		max-width: 400px;
 	}
 
-	.coverage__list__sub-row {
+	.tabs__coverage__list__sub-row {
 		margin-bottom: 2rem;
 		.columns {
 			&:first-of-type {
@@ -148,12 +155,12 @@
 				text-align: right;
 			}
 		}
-		.coverage__list__row__title {
+		.tabs__coverage__list__row__title {
 			font-size: 30px;
 		}
 	}
 
-	.coverage__list__row {
+	.tabs__coverage__list__row {
 		background-image: -webkit-gradient(
 			linear,
 			left top,
@@ -169,13 +176,13 @@
 		text-transform: uppercase;
 	}
 
-	.coverage__list__row__desc {
+	.tabs__coverage__list__row__desc {
 		color: #333;
 		line-height: 1.4;
 		margin-bottom: 0;
 	}
 
-	.coverage__list__row__title {
+	.tabs__coverage__list__row__title {
 		font-weight: bolder;
 	}
 
@@ -210,19 +217,29 @@
 		display: none;
 	}
 
+	.tabs__coverage__footer__col {
+		&:last-of-type {
+			background-color: #efd0b1;
+			padding: 1rem;
+			p {
+				margin-bottom: 0;
+			}
+		}
+	}
+
 	@media screen and ( min-width: 40em ) {
 
 		.coverage {
 			padding: 3rem 0 0;
 		}
 
-		.coverage__intro {
+		.tabs__coverage {
 			.secureDateCoverage {
 				max-width: 300px;
 			}
 		}
 
-		.coverage__intro__title {
+		.tabs__coverage__title {
 			margin-bottom: 2rem;
 		}
 
@@ -236,34 +253,16 @@
 			min-height: 500px;
 		}
 
-		.coverage__list__row {
+		.tabs__coverage__list__row {
 			margin-bottom: 3rem;
-			margin-left: auto !important;
-			margin-right: auto !important;
-			max-width: 600px;
 		}
 
-		.coverage__list__row__footer {
-			margin-left: auto !important;
-			margin-right: auto !important;
-			max-width: 600px;
-			.columns {
-				&:nth-of-type( 2 ) {
-					background-color: #efd0b1;
-					p {
-						padding: 10px 0;
-						margin: 0;
-					}
-				}
-			}
-		}
-
-		.coverage__list__sub-row {
+		.tabs__coverage__list__sub-row {
 			margin-bottom: 0;
 		}
 
 
-		.coverage__list__sub-row {
+		.tabs__coverage__list__sub-row {
 			.columns {
 				&:first-of-type {
 					text-align: initial;

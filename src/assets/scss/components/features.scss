@@ -1,6 +1,5 @@
 
 	.features {
-		padding: 3rem 0;
 		.tabs {
 			margin-left: 0;
 			margin-right: 0;
@@ -12,7 +11,7 @@
 		}
 
 		.tabs-panel {
-			padding: 3rem 1.6rem;
+			padding: 3rem 0;
 			.heading__sub-title {
 				margin-bottom: 3rem;
 			}
@@ -241,7 +240,7 @@
 			}
 
 			.tabs-panel {
-				padding: 3rem;
+				padding: 3rem 0;
 			}
 
 			.tabs-title {
