@@ -43,6 +43,7 @@
 				flex: 1 1 0;
 				height: auto;
 				opacity: 1;
+				text-align: center;
 				visibility: visible;
 				width: auto;
 				li {
@@ -53,7 +54,8 @@
 	}
 
 	.header__list {
-		padding-left: 1rem;
+		margin-left: 0;
+		margin-right: 0;
 		margin: 1rem 0;
 	}
 
@@ -61,6 +63,7 @@
 		list-style: none;
 		a {
 			color: white;
+			display: inline-block;
 			text-transform: uppercase;
 		}
 	}

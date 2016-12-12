@@ -1,6 +1,30 @@
 
 	.features {
 		padding: 3rem 0;
+		.tabs {
+			margin-left: 0;
+			margin-right: 0;
+			width: 100%;
+		}
+
+		.tabs__list {
+			margin: 3rem 0;
+		}
+
+		.tabs-panel {
+			padding: 3rem 1.6rem;
+			.heading__sub-title {
+				margin-bottom: 3rem;
+			}
+		}
+
+		.tabs-title {
+			float: none;
+			text-align: center;
+			a {
+				padding: 0;
+			}
+		}
 	}
 
 	.features__contract {
@@ -25,6 +49,16 @@
 
 	.features__header__image {
 		margin: 0;
+	}
+
+	.features__tabs__content__desc {
+		display: none;
+	}
+
+	.features__tabs__image {
+		img {
+			display: none;
+		}
 	}
 
 	.features__list {
@@ -194,10 +228,60 @@
 	}
 
 	@media screen and ( min-width: 40em ) {
-		.features__umbrella__row {
-			margin: 0;
-			text-align: left;
+
+		.features {
+			.tabs {
+				border: 0;
+				border-bottom: 4px solid #b6b6b8;
+			}
+
+			.tabs__list {
+				margin: 3rem auto;
+				max-width: 960px;
+			}
+
+			.tabs-panel {
+				padding: 3rem;
+			}
+
+			.tabs-title {
+				padding: 4px 6px;
+				position: relative;
+				top: 2px;
+				&.is-active {
+					padding: 0;
+					top: 4px;
+					.features__tabs__content {
+						bottom: 0;
+						position: absolute;
+						.features__tabs__content__desc {
+							display: none;
+						}
+					}
+				}
+				& > a {
+					padding: 0;
+				}
+				.features__tabs__content {
+					bottom: 0;
+					color: white;
+					left: 0;
+					position: absolute;
+					right: 0;
+					text-align: center;
+					z-index: 1;
+				}
+
+				.features__tabs__content__title {
+					font-weight: bolder;
+					letter-spacing: -1px;
+					text-transform: uppercase;
+				}
+			}
 		}
+
+
+
 
 		.features__header {
 			.columns {
@@ -206,6 +290,34 @@
 						max-width: 460px;
 					}
 				}
+			}
+		}
+
+
+		.features__tabs__content__desc {
+			display: inline-block;
+		}
+
+		.features__umbrella__row {
+			margin: 0;
+			text-align: left;
+		}
+
+
+		.features__tabs__image {
+			position: relative;
+			&:before {
+				background-color: rgba( 0,0,0,.5 );
+				bottom: 0;
+				content: "";
+				left: 0;
+				position: absolute;
+				right: 0;
+				top: 0;
+			}
+			img {
+				display: inline-block;
+				object-fit: cover;
 			}
 		}
 	}

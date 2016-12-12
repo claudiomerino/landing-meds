@@ -64,21 +64,9 @@
 	}
 
 	.intro__header {
-		bottom: 100px;
+		background-color: #009bde;
 		padding: 1rem 0;
 		position: relative;
-		&:before {
-			background-image: url( '../img/blur-image.png' );
-			background-position: 1px 0;
-			background-size: cover;
-			bottom: 0;
-			content: "";
-			filter: blur(8px);
-			left: 0;
-			position: absolute;
-			right: 0;
-			top: 0;
-		}
 		.intro__columns {
 			position: relative;
 		}
@@ -238,18 +226,6 @@
 			right: 0;
 		}
 
-		.intro__header {
-			left: 0;
-			position: absolute;
-			right: 0;
-			top: 6rem;
-			&:before {
-				background-image: none;
-				background-position: 0;
-				filter: blur(0);
-			}
-		}
-
 		.intro__plan {
 			.columns {
 				padding-bottom: 1rem;
@@ -271,4 +247,27 @@
 		.intro__price__sub-title {
 			padding-left: 40px;
 		}
+	}
+
+	@media screen and ( min-width: 62em ) {
+
+		.intro__bg {
+			img {
+				min-height: 630px;
+			}
+		}
+
+		.intro__header {
+			background-color: transparent;
+			left: 0;
+			position: absolute;
+			right: 0;
+			top: 6rem;
+			&:before {
+				background-image: none;
+				background-position: 0;
+				filter: blur(0);
+			}
+		}
+
 	}

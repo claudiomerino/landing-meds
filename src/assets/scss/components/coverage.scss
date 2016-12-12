@@ -102,8 +102,8 @@
 
 
 	.coverage__features__list__percentage {
-		color: #2d76c5;
-		font-size: 24px;
+		color: #f79123;
+		font-size: 40px;
 		font-weight: bolder;
 		line-height: 1.2;
 		margin-bottom: 0;
@@ -164,12 +164,13 @@
 		background-image: linear-gradient(to top, #D7D7D7 0%, #FFFFFF 100%);
 		border-radius: 6px;
 		border: 1px solid #989898;
-		color: #2c75c2;
+		color: #009bde;
 		padding: 1rem 0;
 		text-transform: uppercase;
 	}
 
 	.coverage__list__row__desc {
+		color: #333;
 		line-height: 1.4;
 		margin-bottom: 0;
 	}
@@ -221,6 +222,10 @@
 			}
 		}
 
+		.coverage__intro__title {
+			margin-bottom: 2rem;
+		}
+
 		.coverage__features__columns {
 			.accordion-title {
 				display: none;
@@ -232,7 +237,25 @@
 		}
 
 		.coverage__list__row {
-			max-width: 800px;
+			margin-bottom: 3rem;
+			margin-left: auto !important;
+			margin-right: auto !important;
+			max-width: 600px;
+		}
+
+		.coverage__list__row__footer {
+			margin-left: auto !important;
+			margin-right: auto !important;
+			max-width: 600px;
+			.columns {
+				&:nth-of-type( 2 ) {
+					background-color: #efd0b1;
+					p {
+						padding: 10px 0;
+						margin: 0;
+					}
+				}
+			}
 		}
 
 		.coverage__list__sub-row {
