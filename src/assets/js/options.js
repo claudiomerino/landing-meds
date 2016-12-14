@@ -2,9 +2,7 @@
 	let $secure = $( '#secure' );
 	let $secure2 = $( '#secure2' );
 	let $secureDate = $( '#secureDate' );
-	let $secureDateOption = $( '#secureDate option' );
-	let $secureDateOption2 = $( '#secureDate2 option' );
-	let $secureDateOption3 = $( '#secureDate3 option' );
+	let $secureDateOption = $( 'select.secureDateCoverage option' );
 	let $selectSecure = $('select.secure');
 	let $selectSecureDate = $('select.secureDate');
 	let $selectSecureDateCoverage = $('select.secureDateCoverage');
@@ -32,7 +30,7 @@
 	})
 
 	if( $secure.add( $secure2 ).val() == 'secureMayor' ) {
-		$secureDateOption2.each( function () {
+		$secureDateOption.each( function () {
 			if( $( this ).val() == '1865' ) {
 				$( this ).attr('disabled', true);
 			}
@@ -44,7 +42,7 @@
 		if( $secure.add( $secure2 ).val() == 'secureMayorMore' ) {
 			$( $selectSecureDateCoverage ).val( '1865' );
 
-			$secureDateOption2.each( function () {
+			$secureDateOption.each( function () {
 				$( this ).attr('disabled', true);
 				if( $( this ).val() == '1865' ) {
 					$( this ).attr('disabled', false);
@@ -52,7 +50,7 @@
 			})
 		}
 		else {
-			$secureDateOption2.each( function () {
+			$secureDateOption.each( function () {
 				$(this ).attr('disabled', false);
 				if( $( this ).val() == '1865' ) {
 					$( this ).attr('disabled', true);

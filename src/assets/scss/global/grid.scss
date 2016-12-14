@@ -10,6 +10,12 @@
   padding: 1.5rem 1.6rem;
 }
 
+.u-container-3 {
+  margin: 0 auto;
+  max-width: 500px;
+  padding: 1.5rem 1.6rem;
+}
+
 .u-row {
   box-sizing: border-box;
   display: flex;
@@ -334,6 +340,9 @@
     padding: 6rem 0 3rem;
   }
   .u-container-2 {
+    padding: 6rem 0 3rem;
+  }
+  .u-container-3 {
     padding: 6rem 0 3rem;
   }
   .col-md, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
