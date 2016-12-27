@@ -8,9 +8,11 @@
 	.intro__bg {
 		position: relative;
 		text-align: center;
-		img {
-			object-fit: cover;
-		}
+		// img {
+		// 	object-fit: cover;
+		// }
+		width: 100%;
+		max-height: 700px;
 
 
 		.contract__price__button {
