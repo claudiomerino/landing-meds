@@ -61,8 +61,9 @@
 	}
 
 	.intro__columns__contract__desc {
-		color: #74817a;
+		color: white;
 		margin-bottom: 0;
+		font-size: 1.1rem;
 	}
 
 	.intro__header {
@@ -90,8 +91,10 @@
 	.intro__plan__description {
 		color: #535548;
 		margin-bottom: 2rem;
+		font-size: 0.9rem;
 		&:last-of-type {
-			margin-bottom: 0;
+			margin-top: 2rem;
+			margin-bottom: 2rem;
 		}
 	}
 
@@ -109,23 +112,23 @@
 	}
 
 	.intro__price__amount {
-		color: #009ae0;
+		color: white;
 		font-weight: bolder;
 		line-height: 1;
 		margin-bottom: 16px;
 		i {
-			color: #009ae0;
-			font-size: 24px;
+			color: white;
+			font-size: 18px;
 			position: relative;
 			top: -28px;
 			left: 6px;
 		}
 		.price-peso {
 			display: block;
-			font-size: 35px;
+			font-size: 40px;
 		}
 		.price-mount {
-			font-size: 70px;
+			font-size: 50px;
 		}
 		& > .intro__price__second-amount {
 			display: block;
@@ -133,9 +136,12 @@
 			max-width: 226px;
 		}
 		.intro__price__second-amount {
-			color: #74817a;
-			font-size: 18px;
+			color: #ccc;
+			font-size: 16px;
 			text-align: right;
+			padding-right: 13px;
+			font-weight: 400;
+			margin-bottom: 30px;
 		}
 	}
 
@@ -166,11 +172,12 @@
 
 
 	.contract__price__button {
-		font-size: 24px;
+		font-size: 20px;
 		line-height: 1.2;
 		margin-bottom: 0;
+		padding: 10px;
 		h3 {
-			font-size: 24px;
+			font-size: 20px;
 			font-weight: 900;
 			margin: 0 50px;
 			line-height: 1.2;
@@ -180,6 +187,10 @@
 			margin: 10px 0 0 0;
 			text-transform: none;
 		}
+	}
+
+	.contract__price__link a{
+			text-decoration: underline;
 	}
 
 	@media screen and ( min-width: 40em ) {

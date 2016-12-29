@@ -1,35 +1,29 @@
-
-
-	<div id="wrapper" class="wrapper">
-		<div id="loading" class="loading">
+<!-- 
+<div id="loading" class="loading">
 			<div class="columns">
 				<h3 class="text-center">Cargando información</h3>
 				<div class="loader">Loading...</div>
 			</div>
-		</div>
+		</div> -->
 		<section class="features" id="features" data-magellan-target="features">
-			<section class="features__header z-depth-1">
+			<section class="features__header">
+
 				<div class="row">
 					<div class="features__heading columns small-12">
-						<h2 class="heading__sub-title text-center">ENTRENA SINTIÉNDOTE PROTEGIDO CON</h2>
-						<h2 class="heading__title text-center">NUESTROS SEGUROS PENSADOS PARA TI</h2>
+						<h2 class="text-center">ENTRENA SINTIÉNDOTE PROTEGIDO CON</h2>
+						<h2 class="text-center">NUESTROS SEGUROS PENSADOS PARA TI</h2>
 					</div>
-
-					<ul class="tabs row" data-tabs id="tabs">
-						{{> tab-nav}}
-					</ul>
-					<div class="tabs-content" data-tabs-content="tabs">
-
-						<p class="intro__plan__description text-center">Esta cotización es referencial. Los valores podrían variar de acuerdo al grupo familiar y las edades de los asegurados.<br>Valor referencial en pesos calculado en base al valor de UF 26.329,30 del día 9 de diciembre de 2016.</p>
-						
-						{{> tab-1}}
-						{{> tab-2}}
-						{{> tab-3}}
-						{{> tab-4}}
-						
-					</div>
-
 
 				</div>
+				{{> tab-nav}}
+				</div>
+			</section>
+			<p class="intro__plan__description text-center">Esta cotización es referencial. Los valores podrían variar de acuerdo al grupo familiar y las edades de los asegurados.<br>Valor referencial en pesos calculado en base al valor de UF 26.329,30 del día 9 de diciembre de 2016.</p>
+
+			<section class="tabs-content" data-tabs-content="tabs">			
+				{{> tab-1}}
+				{{> tab-2}}
+				{{> tab-3}}
+				{{> tab-4}}
 			</section>
 		</section>
