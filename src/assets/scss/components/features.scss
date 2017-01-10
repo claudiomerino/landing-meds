@@ -83,6 +83,9 @@
 
 
 	  &:hover {
+	  	.tabs__primary__banner__text {
+	  		display: none;
+	  	}
 	  	img {
 		    transform: scale(1.1);
 		    -webkit-filter:blur(10px);
@@ -110,7 +113,9 @@
 	}
 
 	.tabs-title.is-active {
-
+		.tabs__primary__banner__text {
+	  	display: none;
+	  }
 		.overlay-fade-in {
 	  	img {
 		    transform: scale(1.1);

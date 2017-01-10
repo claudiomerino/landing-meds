@@ -1,4 +1,17 @@
+	.tabs__primary__banner__text {
 
+		left: 0;
+		position: absolute;
+		right: 0;
+		top: 50%;
+		z-index: 1;
+		margin-top: -35.5px;
+
+		h4 {
+			font-size: 15px;
+			text-transform: uppercase;
+		}
+	}
 
 	.tabs__coverage__list__row__title {
 		.has-tip {
