@@ -1,4 +1,8 @@
 
+	.coverage__features__tab-lesiones {
+
+	}
+
 	.coverage__features {
 		margin: 3rem 0 0;
 	}
@@ -84,7 +88,6 @@
 		);
 		background-image: linear-gradient(to top, #D7D7D7 0%, #FFFFFF 100%);
 		border: 1px solid #989898;
-		max-width: 49%;
 		.accordion-title {
 			border: 0;
 			border-bottom: 4px solid #4272a2;
@@ -248,6 +251,7 @@
 		}
 
 		.coverage__features__columns {
+			max-width: 49%;
 			.accordion-title {
 				display: none;
 			}
