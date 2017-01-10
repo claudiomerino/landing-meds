@@ -1,30 +1,23 @@
-<!-- 
-<div id="loading" class="loading">
-			<div class="columns">
-				<h3 class="text-center">Cargando información</h3>
-				<div class="loader">Loading...</div>
-			</div>
-		</div> -->
-		<section class="features" id="features" data-magellan-target="features">
-			<section class="features__header">
 
-				<div class="row">
-					<div class="features__heading columns small-12">
-						<h2 class="text-center">ENTRENA PROTEGIDO CON LOS</h2>
-						<h2 class="text-center">SEGUROS MEDS PENSADOS PARA TI</h2>
-					</div>
+	<section class="features" id="features" data-magellan-target="features">
+		<section class="features__header">
 
-				</div>
-				{{> tab-nav}}
-				</div>
-			</section>
-				<p class="intro__plan__description text-center">Las primas podrán variar de acuerdo al grupo familiar y las edades de los asegurados.<br>Valores referenciales en pesos calculados en base al valor de la UF $26.329,30 del día 9 de diciembre de 2016</p>
 			<div class="row">
-				<section class="tabs-content" data-tabs-content="tabs">			
-					{{> tab-1}}
-					{{> tab-2}}
-					{{> tab-3}}
-					{{> tab-4}}
-				</section>
+				<div class="features__heading columns small-12">
+					<h2 class="text-center">ENTRENA PROTEGIDO CON LOS</h2>
+					<h2 class="text-center">SEGUROS MEDS PENSADOS PARA TI</h2>
+				</div>
 			</div>
+			{{> tab-nav}}
+
 		</section>
+		<p class="intro__plan__description text-center">Las primas podrán variar de acuerdo al grupo familiar y las edades de los asegurados.<br>Valores referenciales en pesos calculados en base al valor de la UF $26.329,30 del día 9 de diciembre de 2016</p>
+		<div class="row"  id="initial" data-magellan-target="initial">
+			<section class="tabs-content" data-tabs-content="tabs">
+				{{> tab-1}}
+				{{> tab-2}}
+				{{> tab-3}}
+				{{> tab-4}}
+			</section>
+		</div>
+	</section>

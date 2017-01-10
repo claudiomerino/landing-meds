@@ -179,17 +179,22 @@
 		h3 {
 			font-size: 20px;
 			font-weight: 900;
-			margin: 0 50px;
 			line-height: 1.2;
+			margin-bottom: 0;
+		}
+		p {
+			margin: 0;
+			line-height: 1;
 		}
 		em {
+			font-size: 16px;
 			font-weight: 400;
-			margin: 10px 0 0 0;
+			margin: 0;
 			text-transform: none;
 		}
 	}
 
-	.contract__price__link a{
+	.contract__price__link a {
 			text-decoration: underline;
 	}
 

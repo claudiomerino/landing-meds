@@ -2,6 +2,7 @@
 	.features {
 		padding-top: 4rem;
 		background: url("http://www.walldevil.com/wallpapers/a85/backgrounds-high-resolution-blurred-background1-blur-light-blue.jpg")no-repeat;
+
 		.tabs {
 			margin-left: 0;
 			margin-right: 0;
@@ -23,211 +24,243 @@
 		.tabs-title {
 			float: none;
 			text-align: center;
-			
 		}
 	}
 
 
 
-.image-wrapper {
-  width: 100%;
-  height: 100%;
-  border: 1px solid rgba(0,0,0,0.04);
-  overflow: hidden;
-  position: relative;
-  text-align: center;
-}
+	.image-wrapper {
+	  width: 100%;
+	  height: 100%;
+	  border: 1px solid rgba(0,0,0,0.04);
+	  overflow: hidden;
+	  position: relative;
+	  text-align: center;
+	}
 
-.image-overlay-content {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  overflow: hidden;
-  top: 0;
-  left: 0
-}
+	.image-overlay-content {
+	  width: 100%;
+	  height: 100%;
+	  overflow: hidden;
+	  position: absolute;
+	  top: 0;
+	  left: 0
+	}
 
-// modifier classes
+	// modifier classes
 
-.overlay-fade-in {
-  
-  p {
-    opacity: 0;
-    transition: all 0.2s linear;
-    margin-top: 10px;
-  }
-  a {
-  	color: white;
-  }
-  
-  img {
-    transition: all 0.2s linear;
-  }
-  
-  .image-overlay-content {
-    opacity: 0;
-    background-color: rgba(0,0,0, 0.4);
-    transition: all 0.4s ease-in-out;
-  }
-  
-  h2 {
-    color: #f2f2f2;
-    font-size: 1.8rem;
-    margin-top: 40%;
-    opacity: 0;
-    transition: all 0.2s ease-in-out;
-    background: rgba(0,0,0,0.7);
-  }
-  
-  
-  &:hover img {
-    transform: scale(1.1);
-    -webkit-filter:blur(10px);
-    filter: blur(10px);
-  }
-  
-  &:hover .image-overlay-content {
-    opacity: 1;
-  }
-  
-  &:hover h2, p, .button {
-    opacity: 1;
-  }
-  
-  &:hover p {
-    transition-delay: 0.1s;
-  }
-  
-  &:hover .button {
-    transition-delay: 0.2s;
-    padding: 10px;
-  }
-} 
+	.overlay-fade-in {
+		.contract__price__link {
+			margin-top: 10px;
+		}
+
+	  p {
+	    opacity: 1;
+	    transition: all 0.2s linear;
+	  }
+	  a {
+	  	color: white;
+	  }
+
+	  img {
+	    transition: all 0.2s linear;
+	  }
+
+	  .image-overlay-content {
+	    opacity: 1;
+	    background-color: rgba(0,0,0, 0.4);
+	    transition: all 0.4s ease-in-out;
+	  }
+
+	  h2 {
+	    color: #f2f2f2;
+	    font-size: 1.8rem;
+	    margin-top: 40%;
+	    opacity: 0;
+	    transition: all 0.2s ease-in-out;
+	    background: rgba(0,0,0,0.7);
+	  }
 
 
+	  &:hover {
+	  	img {
+		    transform: scale(1.1);
+		    -webkit-filter:blur(10px);
+		    filter: blur(10px);
+		  }
+
+		  .image-overlay-content {
+	      opacity: 1;
+	    }
+
+	    h2, p, .button {
+	      opacity: 1;
+	    }
+
+	    p {
+	      transition-delay: 0.1s;
+	    }
+
+	    .button {
+	      transition-delay: 0.2s;
+	      padding: 10px;
+	    }
+	  }
+
+	}
+
+	.tabs-title.is-active {
+
+		.overlay-fade-in {
+	  	img {
+		    transform: scale(1.1);
+		    -webkit-filter:blur(10px);
+		    filter: blur(10px);
+		  }
+
+		  .image-overlay-content {
+	      opacity: 1;
+	    }
+
+	    h2, p, .button {
+	      opacity: 1;
+	    }
+
+	    p {
+	      transition-delay: 0.1s;
+	    }
+
+	    .button {
+	      transition-delay: 0.2s;
+	      padding: 10px;
+	    }
+		}
+	}
+
+	.overlay-slide-in-left {
+	  img {
+	    transition: all 0.3s ease-in-out;
+	  }
+
+	  .image-overlay-content {
+	    background-image: url(http://www.awwwards.com/awards/images/2015/04/pattern.jpg);
+	    background-color: rgba(0,0,0,0.3);
+	    transform: translateX(-110%);
+	    opacity: 1;
+	    transition: all 0.4s ease-in-out;
+	    box-shadow: 0 0 7px #ccc;
+	  }
+
+	  .overlay-slide-in-left h3{
+	  	margin-top: -100px;
+	  }
+
+	  .button {
+	    display: inline-block;
+	    text-decoration: none;
+	    padding: 7px 14px;
+	    background: #000;
+	    color: #fff;
+	    text-transform: uppercase;
+	    box-shadow: 0 0 1px #000;
+	    position: relative;
+	    border-radius: 7px;
+
+	    &:hover {
+	      background-color: #444;
+	    }
+
+	  }
+
+	  &:hover .image-overlay-content {
+	    transform: translateX(0px);
+	  }
+
+	  &:hover img {
+	    transform: translateX(80%);
+	    transition-delay: 0.1s;
+	  }
+
+	  &:hover p{
+	    opacity: 1;
+	    transition-delay: 0.4s;
+	  }
+	}
 
 
-.overlay-slide-in-left {
-  img {
-    transition: all 0.3s ease-in-out;
-  }
-  .image-overlay-content {
-    background-image: url(http://www.awwwards.com/awards/images/2015/04/pattern.jpg);
-    background-color: rgba(0,0,0,0.3);
-    transform: translateX(-110%);
-    opacity: 1;
-    transition: all 0.4s ease-in-out;
-    box-shadow: 0 0 7px #ccc;
-  }
-  .overlay-slide-in-left h3{
-  	margin-top: -100px;
-  }
+	.overlay-fade-in-new-background {
 
+	  .button {
+	    display: inline-block;
+	    text-decoration: none;
+	    padding: 7px 14px;
+	    background: #000;
+	    color: #fff;
+	    text-transform: uppercase;
+	    border-radius: 5px;
+	    box-shadow: 0 0 1px #000;
+	    position: relative;
+	    opacity: 0;
+	    transition: all 0.2s ease-in-out;
 
-  .button {
-    display: inline-block;
-    text-decoration: none;
-    padding: 7px 14px; 
-    background: #000;
-    color: #fff;
-    text-transform: uppercase;
-    box-shadow: 0 0 1px #000;
-    position: relative;
-    border-radius: 7px;
+	    &:hover {
+	      box-shadow: 0 0 5px #fff;
+	      background-color: #222;
+	    }
+	  }
 
-    &:hover {
-      background-color: #444;
-    }
-  }
+	  p{
+	    font-size: 28px;
+	  }
 
-  &:hover .image-overlay-content {
-    transform: translateX(0px);
-  } 
+	  .image-overlay-content {
+	    opacity: 0;
+	      background-image: url(http://subtlepatterns.com/patterns/gplaypattern.png);
+	    background-color: rgba(255,255,255, 0.5);
+	    transition: all 0.4s ease-in-out;
+	  }
 
-  &:hover img {
-    transform: translateX(80%);
-    transition-delay: 0.1s;
-  }
+	  h2 {
+	    color: #000;
+	    font-size: 1.6rem;
+	    margin-top: 30%;
+	    opacity: 0;
+	    transition: all 0.2s ease-in-out;
+	  }
 
-  &:hover p{
-    opacity: 1;
-    transition-delay: 0.4s;
-  }
-}
-  
-  
-.overlay-fade-in-new-background {
-  
-  .button {
-    display: inline-block;
-    text-decoration: none;
-    padding: 7px 14px; 
-    background: #000;
-    color: #fff;
-    text-transform: uppercase;
-    border-radius: 5px;
-    box-shadow: 0 0 1px #000;
-    position: relative;
-    opacity: 0;
-    transition: all 0.2s ease-in-out;
-    
-    &:hover {
-      box-shadow: 0 0 5px #fff;
-      background-color: #222;
-    }
-  }
-  
-  p{
-    font-size: 28px; 
-  }
-  
-  .image-overlay-content {
-    opacity: 0;
-      background-image: url(http://subtlepatterns.com/patterns/gplaypattern.png);
-    background-color: rgba(255,255,255, 0.5);
-    transition: all 0.4s ease-in-out;
-  }
-  
-  h2 {
-    color: #000;
-    font-size: 1.6rem;
-    margin-top: 30%;
-    opacity: 0;
-    transition: all 0.2s ease-in-out;
-  }
-  
-  p {
-    opacity: 0;
-    transition: all 0.2s linear;
-  }
-  
-  img{
-    transition: all 0.2s ease-in-out;
-  }
-  
-  &:hover img {
-    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
-    filter: gray;
-    -webkit-filter: grayscale(100%);
-    transform: scale(1.5);
-  }
-  
-  &:hover .image-overlay-content {
-    opacity: 1;
-  }
-  
-  &:hover h2, p, .button {
-    opacity: 1;
-  }
-  
-  &:hover p {
-    transition-delay: 0.1s;
-  }
-  
-  &:hover .button {
-    transition-delay: 0.2s;
-  }
-} 
+	  p {
+	    opacity: 0;
+	    transition: all 0.2s linear;
+	  }
+
+	  img{
+	    transition: all 0.2s ease-in-out;
+	  }
+
+	  &:hover img {
+	    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
+	    filter: gray;
+	    -webkit-filter: grayscale(100%);
+	    transform: scale(1.5);
+	  }
+
+	  &:hover .image-overlay-content {
+	    opacity: 1;
+	  }
+
+	  &:hover h2, p, .button {
+	    opacity: 1;
+	  }
+
+	  &:hover p {
+	    transition-delay: 0.1s;
+	  }
+
+	  &:hover .button {
+	    transition-delay: 0.2s;
+	  }
+	}
+
 	.features__contract {
 		background-color: #AE83BF;
 		color: white;
@@ -314,8 +347,6 @@
 		text-transform: uppercase;
 		text-align: left;
 	}
-
-
 
 	.wrapper {
 		position: relative;
@@ -433,12 +464,17 @@
     background: transparent;
 	}
 
+	.tab__title__mobile {
+		color: #333;
+		font-size: 16px;
+		line-height: 1.2;
+	}
+
 	@media screen and ( min-width: 40em ) {
 
 		.features {
 			.tabs {
 				border: 0;
-				// border-bottom: 4px solid #b6b6b8;
 			}
 
 			.tabs__list {
@@ -455,8 +491,6 @@
 				position: relative;
 				top: 2px;
 				&.is-active {
-					// padding: 0;
-					// top: 4px;
 					.features__tabs__content {
 						bottom: 0;
 						position: absolute;
@@ -531,4 +565,31 @@
 				object-fit: cover;
 			}
 		}
+
+		.overlay-fade-in {
+
+			p {
+				opacity: 0;
+			}
+
+			a {
+				color: white;
+			}
+
+			img {
+				transition: all 0.2s linear;
+			}
+
+			.image-overlay-content {
+				background-color: rgba(0,0,0, 0.4);
+				opacity: 0;
+				transition: all 0.4s ease-in-out;
+			}
+
+		}
+
+		.tab__title__mobile {
+			display: none;
+		}
+
 	}

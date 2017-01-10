@@ -10,6 +10,19 @@
 	.tabs__heading__container {
 		padding: 0 1.6rem;
 	}
+
+	.tabs__select {
+		.active-tab {
+			display: none;
+		}
+
+		.tabs__select__content__desc {
+			font-size: 16px;
+			line-height: 1.4;
+		}
+
+	}
+
 	.tabs__select__container {
 		padding: 0 1.6rem;
 	}
@@ -30,11 +43,6 @@
 	$global-radius: 4px;
 
 
-
-
-
-
-
 	@media screen and ( min-width: 62em ) {
 
 		.tabs__features__container {
@@ -44,8 +52,37 @@
 		.tabs__heading__container {
 			padding: 0 3rem;
 		}
+
+		.tabs__select {
+
+			.heading__sub-title {
+				font-size: 18px;
+				line-height: 1.4;
+				text-transform: uppercase;
+			}
+
+			.tabs__heading__sub-title {
+				color: #444;
+				font-size: 24px;
+				margin-top: 0;
+				text-transform: initial;
+			}
+
+			.tabs__select__content {
+				bottom: 0;
+				left: 0;
+				position: absolute;
+				right: 0;
+				z-index: 11;
+			}
+
+			.tabs__select__content__desc {
+				color: white;
+			}
+		}
+
 		.tabs__select__container {
-		padding: 3rem;
-	}
+			padding: 3rem;
+		}
 
 	}
