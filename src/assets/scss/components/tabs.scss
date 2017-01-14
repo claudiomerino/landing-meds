@@ -13,6 +13,10 @@
 		}
 	}
 
+	.tabs__coverage__list {
+		padding: 0 15px;
+	}
+
 	.tabs__coverage__list__row__title {
 		.has-tip {
 			font-size: 14px;
@@ -61,7 +65,7 @@
 	}
 
 	.tabs__features__container {
-		padding: 3rem 1.6rem;
+		padding: 0 1.6rem 3rem;
 	}
 
 	.coverage__features__list__percentage {
@@ -77,6 +81,11 @@
 
 
 	@media screen and ( min-width: 62em ) {
+
+
+		.tabs__coverage__list {
+			padding: 0;
+		}
 
 		.tabs__features__container {
 			padding: 0 3rem 3rem 3rem;

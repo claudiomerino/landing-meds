@@ -17,11 +17,10 @@
 	let $changeCoverageMore = $('.changeCoverageMore');
 
 	const API = 'http://mindicador.cl/api/uf';
-	let ufValuePeso;
 
 	$.get( API )
 		.done( (res) => {
-			ufValuePeso = res.serie[0].valor;
+			let ufValuePeso = JSON.parse(res).serie[0].valor;
 
 			if( $selectSecure.val() == 'secure1' ) {
 				$selectSecureDate.val('14');

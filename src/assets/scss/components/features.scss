@@ -1,7 +1,27 @@
+	.tabs-title > a:focus, .tabs-title > a[aria-selected='true'] {
+		background: transparent;
+	}
+
 
 	.features {
 		padding-top: 4rem;
 		background: url("http://www.walldevil.com/wallpapers/a85/backgrounds-high-resolution-blurred-background1-blur-light-blue.jpg")no-repeat;
+
+		.tabFirst {
+			background-image: url('../img/img_main_catastrofico.jpg');
+		}
+
+		.tabSecond {
+			background-image: url('../img/img_main_catastrofico-complementario.jpg');
+		}
+
+		.tabThird {
+			background-image: url('../img/img_main_catastrofico-lesiones.jpg');
+		}
+
+		.tabFourth {
+			background-image: url('../img/img_main_lesiones.jpg');
+		}
 
 		.tabs {
 			margin-left: 0;
@@ -21,7 +41,13 @@
 			}
 		}
 
+		.tab__title__mobile {
+			color: white;
+		}
+
 		.tabs-title {
+    	background-size: cover;
+    	background-position: center;
 			float: none;
 			text-align: center;
 		}
@@ -303,7 +329,7 @@
 
 	.features__tabs__image {
 		img {
-			display: inline-block;
+			display: none;
 			object-fit: cover;
 		}
 	}
@@ -495,6 +521,7 @@
 			}
 
 			.tabs-title {
+				background: none;
 				padding: 4px 6px;
 				position: relative;
 				top: 2px;
@@ -567,6 +594,10 @@
 				position: absolute;
 				right: 0;
 				top: 0;
+			}
+
+			img {
+				display: inline-block;
 			}
 		}
 

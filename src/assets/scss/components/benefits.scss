@@ -8,6 +8,12 @@
 	}
 
 	.tabs__benefits__row {
-		margin: 3rem auto 3rem;
-		max-width: 500px;
+		margin: 0 1.6rem 3rem;
+	}
+
+	@media screen and ( min-width: 48em ) {
+		.tabs__benefits__row {
+			margin: 3rem auto;
+			max-width: 500px;
+		}
 	}

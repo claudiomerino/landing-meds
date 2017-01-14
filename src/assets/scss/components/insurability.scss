@@ -1,6 +1,13 @@
 
 	.insurability {
 		padding: 3rem 0;
+		.columns {
+			margin-bottom: 2rem;
+		}
+	}
+
+	.flex-video iframe, .flex-video object, .flex-video embed, .flex-video video {
+		top: 3rem;
 	}
 
 	.insurability__box {
@@ -77,8 +84,9 @@
 	  .image {
 	    position: relative;
 	    .title {
+		    border-bottom: 4px solid #009ae0;
 				bottom: 0;
-				color: #fff;
+				color: #009ae0;
 				left: 0;
 				padding: 1.3rem;
 				position: absolute;
@@ -86,12 +94,31 @@
 	    }
 	    img {
 	      border-radius: 2px 2px 0 0;
+	      opacity: 0;
 	    }
 	  }
 	}
 
 
 	@media screen and ( min-width: 40em ) {
+
+		.card {
+		  .image {
+		    .title {
+		    	border-bottom: 0;
+					color: white;
+		    }
+		    img {
+		      opacity: 1;
+		    }
+		  }
+		}
+
+		.insurability {
+			.columns {
+				margin-bottom: 0;
+			}
+		}
 
 		.insurability__box {
 			text-align: center;
