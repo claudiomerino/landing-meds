@@ -26,9 +26,6 @@
 
 	let hash = window.location.hash;
 
-	console.log( hash );
-
-
 	$headerContainer.on('sticky.zf.stuckto:top', function() {
 		$headerMenu.addClass( 'visible' );
 		$headerList.addClass( 'visible' );

@@ -20,7 +20,7 @@
 
 	$.get( API )
 		.done( (res) => {
-			let ufValuePeso = JSON.parse(res).serie[0].valor;
+			let ufValuePeso = res.serie[0].valor;
 
 			if( $selectSecure.val() == 'secure1' ) {
 				$selectSecureDate.val('14');
