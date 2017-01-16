@@ -61,6 +61,7 @@
 
 					if( $selectSecure.val() == 'secure1' ) {
 						$valueDataUf = $( $selectSecureCan ).find(':selected').data('uf' + $valueSecureDate);
+						console.log($valueDataUf);
 						$.each( $selectSecureDateOption, ( k, v ) => {
 							if( $(v).data('select') == 'secure1' ) {
 								$(v).show();
@@ -73,6 +74,7 @@
 
 					else if ( $selectSecure.val() == 'secure2' ) {
 						$valueDataUf = $( $selectSecureCan ).find(':selected').data('uf' + $valueSecureDate);
+						console.log($valueDataUf);
 
 						$.each( $selectSecureDateOption, ( k, v ) => {
 							if( $(v).data('select') == 'secure2' ) {
@@ -86,6 +88,7 @@
 
 					else if ( $selectSecure.val() == 'secure3' ) {
 						$valueDataUf = $( $selectSecureCan ).find(':selected').data('uf' + $valueSecureDate);
+						console.log($valueDataUf);
 
 						$.each( $selectSecureDateOption, ( k, v ) => {
 							if( $(v).data('select') == 'secure3' ) {
@@ -99,6 +102,7 @@
 
 					else if ( $selectSecure.val() == 'secure4' ) {
 						$valueDataUf = $( $selectSecureCan ).find(':selected').data('uf' + $valueSecureDate);
+						console.log($valueDataUf);
 						$.each( $selectSecureDateOption, ( k, v ) => {
 							if( $(v).data('select') == 'secure4' ) {
 								$(v).show();
