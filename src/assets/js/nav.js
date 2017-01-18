@@ -17,6 +17,8 @@
 	let $selectSecureDate = $('select.secureDate');
 	let $selectSecureDateOption = $('select.secureDate option');
 
+	let $changeURL = $( '#changeURL' );
+
 	$headerMenu.on( 'click', () => {
 		$headerMenu.toggleClass( 'visible' );
 		$headerList.toggleClass( 'visible' );
@@ -28,8 +30,14 @@
 		}
 	});
 
+	navVisible();
+
 	let hash = window.location.hash;
 	$( window ).resize( function() {
+		navVisible();
+	});
+
+	function navVisible() {
 		if (window.matchMedia( "(min-width: 1135px)" ).matches) {
 
 		  $headerContainer.on('sticky.zf.stuckto:top', function() {
@@ -54,7 +62,7 @@
 		    $headerList.removeClass( 'visible' );
 		  })
 		}
-	});
+	}
 
 
 	const VAL_FIRST_TAB = 0.276;
@@ -82,6 +90,8 @@
 						$(v).hide();
 					}
 				})
+
+				$changeURL.attr( 'href', 'https://segurosmeds.metlife.cl/VentaWeb/Formulario/MedsCatastrofico' );
 
 				$tabs.foundation('selectTab', 'panel1');
 
@@ -112,6 +122,8 @@
 					}
 				})
 
+				$changeURL.attr( 'href', 'https://segurosmeds.metlife.cl/VentaWeb/Formulario/MedsCatastroficoComp' );
+
 				$tabs.foundation('selectTab', 'panel2');
 
 				$tabSecond.addClass( 'active-tab' );
@@ -141,6 +153,8 @@
 					}
 				})
 
+				$changeURL.attr( 'href', 'https://segurosmeds.metlife.cl/VentaWeb/Formulario/MedsCatastroficoLA' );
+
 				$tabs.foundation('selectTab', 'panel3');
 
 				$tabThird.addClass( 'active-tab' );
@@ -168,6 +182,8 @@
 						$(v).hide();
 					}
 				})
+
+				$changeURL.attr( 'href', 'https://segurosmeds.metlife.cl/VentaWeb/Formulario/MedsLA' );
 
 				$tabs.foundation('selectTab', 'panel4');
 
