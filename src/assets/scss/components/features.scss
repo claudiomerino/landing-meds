@@ -1,3 +1,4 @@
+
 	.tabs-title > a:focus, .tabs-title > a[aria-selected='true'] {
 		background: transparent;
 	}
@@ -6,22 +7,6 @@
 	.features {
 		padding-top: 4rem;
 		background: url("http://www.walldevil.com/wallpapers/a85/backgrounds-high-resolution-blurred-background1-blur-light-blue.jpg")no-repeat;
-
-		.tabFirst {
-			background-image: url('../img/img_main_catastrofico.jpg');
-		}
-
-		.tabSecond {
-			background-image: url('../img/img_main_catastrofico-complementario.jpg');
-		}
-
-		.tabThird {
-			background-image: url('../img/img_main_catastrofico-lesiones.jpg');
-		}
-
-		.tabFourth {
-			background-image: url('../img/img_main-lesiones.jpg');
-		}
 
 		.tabs {
 			margin-left: 0;
@@ -34,7 +19,7 @@
 		}
 
 		.tabs-panel {
-			padding: 3rem 0;
+			padding: 3rem 0 0;
 			.heading__sub-title {
 				margin-top: 2rem;
 				margin-bottom: 1rem;
@@ -50,6 +35,12 @@
     	background-position: center;
 			float: none;
 			text-align: center;
+			& > a {
+				padding: 0;
+			}
+			.features__tabs__content__title {
+				margin-bottom: 22px;
+			}
 		}
 	}
 
@@ -66,6 +57,7 @@
 
 	.image-overlay-content {
 		display: none;
+		padding: 10px;
 	}
 
 	// modifier classes
@@ -88,16 +80,16 @@
 	  }
 
 	  .image-overlay-content {
-	  	display: inline-block;
-	  	height: 100%;
-	  	left: 0;
-	  	overflow: hidden;
-	  	position: absolute;
-	  	top: 0;
-	  	width: 100%;
-	    opacity: 1;
-	    background-color: rgba(0,0,0, 0.4);
-	    transition: all 0.4s ease-in-out;
+	  	background-color: rgba(0,0,0, 0.4);
+	  	opacity: 0;
+	  	transition: all 0.4s ease-in-out;
+  		display: inline-block;
+  		height: 100%;
+  		left: 0;
+  		overflow: hidden;
+  		position: absolute;
+  		top: 0;
+  		width: 100%;
 	  }
 
 	  h2 {
@@ -327,13 +319,6 @@
 		display: none;
 	}
 
-	.features__tabs__image {
-		img {
-			display: none;
-			object-fit: cover;
-		}
-	}
-
 	.features__list {
 		.features__list {
 			margin-top: 1rem;
@@ -380,6 +365,24 @@
 		margin: 1rem 0 3rem;
 		text-transform: uppercase;
 		text-align: left;
+	}
+
+	.features__tabs__image {
+		position: relative;
+		&:before {
+			background-color: rgba( 0,0,0,.5 );
+			bottom: 0;
+			content: "";
+			left: 0;
+			position: absolute;
+			right: 0;
+			top: 0;
+		}
+
+		img {
+			display: inline-block;
+			object-fit: cover;
+		}
 	}
 
 	.wrapper {
@@ -534,9 +537,6 @@
 						}
 					}
 				}
-				& > a {
-					padding: 0;
-				}
 				.features__tabs__content {
 					bottom: 0;
 					color: white;
@@ -554,13 +554,10 @@
 					color: white;
 					font-size: 1.2rem;
 					margin-top: 40px;
-					margin-bottom: 20px;
 				}
 
 			}
 		}
-
-
 
 
 		.features__header {
@@ -583,45 +580,6 @@
 			text-align: left;
 		}
 
-
-		.features__tabs__image {
-			position: relative;
-			&:before {
-				background-color: rgba( 0,0,0,.5 );
-				bottom: 0;
-				content: "";
-				left: 0;
-				position: absolute;
-				right: 0;
-				top: 0;
-			}
-
-			img {
-				display: inline-block;
-			}
-		}
-
-		.overlay-fade-in {
-
-			p {
-				opacity: 0;
-			}
-
-			a {
-				color: white;
-			}
-
-			img {
-				transition: all 0.2s linear;
-			}
-
-			.image-overlay-content {
-				background-color: rgba(0,0,0, 0.4);
-				opacity: 0;
-				transition: all 0.4s ease-in-out;
-			}
-
-		}
 
 		.tab__title__mobile {
 			display: none;

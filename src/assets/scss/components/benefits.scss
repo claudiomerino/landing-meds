@@ -3,6 +3,10 @@
 		padding: 2rem 1.6rem !important;
 	}
 
+	.tabs__benefits {
+		padding: 0 15px;
+	}
+
 	.tabs__benefits__container {
 		border-bottom: 4px solid #009bde;
 	}
@@ -16,6 +20,10 @@
 	}
 
 	@media screen and ( min-width: 48em ) {
+		.tabs__benefits {
+			padding: 0;
+		}
+
 		.tabs__benefits__row {
 			margin: 3rem auto;
 			max-width: 500px;

@@ -1,9 +1,6 @@
 
 	.insurability {
 		padding: 3rem 0;
-		.columns {
-			margin-bottom: 2rem;
-		}
 	}
 
 	.flex-video iframe, .flex-video object, .flex-video embed, .flex-video video {
@@ -11,23 +8,21 @@
 	}
 
 	.insurability__box {
-		background-image: linear-gradient(to top, #D7D7D7 0%, #FFFFFF 100%);
+		background-image: linear-gradient(to top, #dedede 0%, #FFFFFF 100%);
 		border: 1px solid #989898;
+		border-radius: 6px;
 		padding: 1rem;
 		text-align: left;
 	}
 
 	.insurability__box__desc {
 		span {
-			color: #4276b2;
+			color: #009ae0;
 			font-weight: bold;
 		}
 		&:nth-of-type( odd ) {
 			margin-bottom: 0;
 		}
-	}
-	.insurability__description {
-		margin-bottom: 2rem;
 	}
 	.insurability__list-item__title {
 		font-weight: bolder;
@@ -35,6 +30,7 @@
 
 	.insurability__features {
 		padding: 0 1.6rem;
+		margin-top: 2rem;
 	}
 
 	.insurability__row {
@@ -43,9 +39,6 @@
 				margin-bottom: 1rem;
 			}
 		}
-		margin: 3rem auto;
-		max-width: 800px;
-
 	}
 
 	.insurability__title {
@@ -124,11 +117,17 @@
 			text-align: center;
 		}
 
+		.insurability__description {
+			margin-bottom: 2rem;
+		}
+
 		.insurability__features {
 			padding: 3rem;
 		}
 
 		.insurability__row {
+			margin: 3rem auto;
+			max-width: 800px;
 			.columns {
 				&:first-of-type {
 					margin-bottom: 0;
