@@ -1,4 +1,6 @@
 
+
+
 	.intro {
 		border-bottom: 4px solid #2d75c7;
 		box-shadow: none;
@@ -162,6 +164,8 @@
 	}
 
 	.intro__price__title {
+		color: #3d4245;
+		font-size: 16px;
 		font-weight: bold;
 		margin-bottom: 0;
 		text-transform: uppercase;
@@ -172,9 +176,8 @@
 		font-size: 20px;
 		line-height: 1.2;
 		margin-bottom: 0;
-		padding: 10px;
 		h3 {
-			font-size: 20px;
+			font-size: 14px;
 			font-weight: 900;
 			line-height: 1.2;
 			margin-bottom: 0;
@@ -196,6 +199,11 @@
 	}
 
 	@media screen and ( min-width: 40em ) {
+		.contract__price__button {
+			display: inline-block;
+			font-size: 20px;
+			width: auto;
+		}
 		.intro {
 			border-bottom: 0;
 			box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.3);

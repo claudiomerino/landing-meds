@@ -2,8 +2,17 @@
 		padding: 10px 30px;
 	}
 
+	.contract__sub-title {
+		color: #3d4245;
+		font-size: 16px;
+		font-weight: bold;
+		text-transform: uppercase;
+	}
+
 	.contract__price__button {
-		padding: 10px 20px;
+		display: block;
+		padding: 10px;
+		width: 100%;
 	}
 
 	.contract__container {
@@ -39,6 +48,12 @@
 	@media screen and ( min-width: 40em ) {
 		.contract__container {
 			padding: 3rem 0;
+		}
+
+		.contract__price__button {
+			display: inline-block;
+			padding: 10px 70px;
+			width: auto;
 		}
 
 		.tabs__contract {

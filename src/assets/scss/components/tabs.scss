@@ -129,6 +129,14 @@
 				color: white;
 				margin-bottom: 0;
 			}
+
+			.tabs-title {
+				&.is-active {
+					.tabs__select__content {
+						display: none;
+					}
+				}
+			}
 		}
 
 		.tabs__select__container {

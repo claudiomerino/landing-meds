@@ -72,6 +72,10 @@
 		padding: 2rem 1.6rem 1rem;
 	}
 
+	.coverage__features__row {
+		margin-bottom: 1rem;
+	}
+
 	.coverage__features__columns {
 		background-image: -webkit-gradient(
 			linear,
@@ -84,8 +88,6 @@
 		border: 1px solid #989898;
 		&:first-of-type {
 			margin-top: 2rem;
-		}
-		&:last-of-type {
 			margin-bottom: 1rem;
 		}
 		.accordion-title {
@@ -110,7 +112,7 @@
 
 	.coverage__features__list__percentage {
 		color: #f79123;
-		font-size: 40px;
+		font-size: 20px;
 		font-weight: bolder;
 		line-height: 1.2;
 		margin-bottom: 0;
@@ -231,13 +233,11 @@
 	}
 
 	.coverage__features__tab-content {
-		display: none;
+		display: block;
 	}
 
 	.tabs__coverage__footer__col {
 		&:last-of-type {
-			// background-color: #d7d7d7;
-			// padding: 1rem;
 			p {
 				margin-bottom: 3rem;
 			}
@@ -248,6 +248,10 @@
 
 		.coverage {
 			padding: 3rem 0 0;
+		}
+
+		.coverage__features__list__percentage {
+			font-size: 40px;
 		}
 
 		.tabs__coverage {
@@ -268,6 +272,7 @@
 			max-width: 49%;
 			&:first-of-type {
 				margin-top: 0;
+				margin-bottom: 0;
 			}
 			.accordion-title {
 				display: none;
