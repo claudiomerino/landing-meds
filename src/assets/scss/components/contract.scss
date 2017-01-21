@@ -1,5 +1,19 @@
+
+	.contract {
+		.price-peso {
+			color: #333;
+		}
+	}
+
+	.contract__desc {
+		margin-bottom: 2rem;
+	}
+
 	.contract__padding__lateral{
 		padding: 10px 30px;
+		h3 {
+			font-size: 20px !important;
+		}
 	}
 
 	.contract__sub-title {
@@ -21,8 +35,16 @@
 		}
 	}
 
+	.contract__price__link {
+		line-height: 1.2;
+	}
+
 	.contract__list {
 		margin-top: 3rem;
+	}
+
+	.contract__title {
+		margin-bottom: .5rem;
 	}
 
 	.tabs__contract {

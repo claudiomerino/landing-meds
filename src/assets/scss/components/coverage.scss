@@ -55,6 +55,17 @@
 		margin-left: 0 !important;
 		margin-right: 0 !important;
 		padding: 1rem 10px;
+		position: relative;
+		&:before {
+			background-image: url('../img/white-shadow.png');
+			content: "";
+			height: 50px;
+			left: 0;
+			position: absolute;
+			right: 0;
+			top: 40px;
+			z-index: 10;
+		}
 		.columns {
 			&:first-of-type {
 				padding: 0;
@@ -98,6 +109,11 @@
 				background-image: none;
 				height: auto;
 				overflow: initial;
+			}
+			.coverage__features__list-item {
+				&:before {
+					background-image: none;
+				}
 			}
 		}
 		&:first-of-type {
@@ -261,18 +277,17 @@
 			padding: 3rem 0 0;
 		}
 
-		.coverage__features__list__percentage {
-			font-size: 40px;
+
+		.coverage__features__list-item {
+			&:before {
+				background-image: none;
+			}
 		}
 
 		.tabs__coverage {
 			.secureDateCoverage {
 				max-width: 300px;
 			}
-		}
-
-		.tabs__coverage__list {
-			margin-bottom: 0;
 		}
 
 		.tabs__coverage__title {
@@ -299,6 +314,10 @@
 			.coverage__features__tab-content {
 				display: block !important;
 			}
+		}
+
+		.coverage__features__columns-only {
+			max-width: 100%;
 		}
 
 		.tabs__coverage__list__row {
@@ -328,4 +347,15 @@
 			background-size: cover;
 		}
 
+	}
+
+	@media screen and ( min-width: 62em ) {
+
+		.coverage__features__list__percentage {
+			font-size: 40px;
+		}
+
+		.tabs__coverage__list {
+			margin-bottom: 0;
+		}
 	}

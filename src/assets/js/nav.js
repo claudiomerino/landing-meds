@@ -75,7 +75,8 @@
 
 	$.get( API )
 		.done( (res) => {
-			let ufValuePeso = res.serie[0].valor;
+			// let ufValuePeso = res.serie[0].valor;
+			let ufValuePeso = 26340.34;
 
 			$tabFirst.add( $navTabFirst ).on( 'click', () => {
 				$selectSecure.val( 'secure1' );
@@ -93,19 +94,38 @@
 
 				$changeURL.attr( 'href', 'https://segurosmeds.metlife.cl/VentaWeb/Formulario/MedsCatastrofico' );
 
-				$tabs.foundation('selectTab', 'panel1');
+				// $tabs.foundation('selectTab', 'panel1');
 
-				$tabFirst.addClass( 'active-tab' );
+
+
+				$tabFirst.addClass( 'active-tab is-active' );
 				$navTabFirst.addClass( 'active-nav-tab' );
 
+				$panel1.addClass( 'is-active' );
+				$panel2.removeClass( 'is-active' );
+				$panel3.removeClass( 'is-active' );
+				$panel4.removeClass( 'is-active' );
 
-				$tabSecond.removeClass( 'active-tab' );
-				$tabThird.removeClass( 'active-tab' );
-				$tabFourth.removeClass( 'active-tab' );
+
+				$tabSecond.removeClass( 'active-tab is-active' );
+				$tabThird.removeClass( 'active-tab is-active' );
+				$tabFourth.removeClass( 'active-tab is-active' );
 
 				$navTabSecond.removeClass( 'active-nav-tab' );
 				$navTabThird.removeClass( 'active-nav-tab' );
 				$navTabFourth.removeClass( 'active-nav-tab' );
+
+				// $tabFirst.addClass( 'active-tab is-active' );
+				// $navTabFirst.addClass( 'active-nav-tab' );
+
+
+				// $tabSecond.removeClass( 'active-tab' );
+				// $tabThird.removeClass( 'active-tab' );
+				// $tabFourth.removeClass( 'active-tab' );
+
+				// $navTabSecond.removeClass( 'active-nav-tab' );
+				// $navTabThird.removeClass( 'active-nav-tab' );
+				// $navTabFourth.removeClass( 'active-nav-tab' );
 			})
 
 			$tabSecond.add( $navTabSecond ).on( 'click', () => {
@@ -124,19 +144,38 @@
 
 				$changeURL.attr( 'href', 'https://segurosmeds.metlife.cl/VentaWeb/Formulario/MedsCatastroficoComp' );
 
-				$tabs.foundation('selectTab', 'panel2');
+				$panel1.removeClass( 'is-active' );
+				$panel2.addClass( 'is-active' );
+				$panel3.removeClass( 'is-active' );
+				$panel4.removeClass( 'is-active' );
 
-				$tabSecond.addClass( 'active-tab' );
+
+				$tabSecond.addClass( 'active-tab is-active' );
 				$navTabSecond.addClass( 'active-nav-tab' );
 
-				$tabFirst.removeClass( 'active-tab' );
-				$tabThird.removeClass( 'active-tab' );
-				$tabFourth.removeClass( 'active-tab' );
+
+				$tabFirst.removeClass( 'active-tab is-active' );
+				$tabThird.removeClass( 'active-tab is-active' );
+				$tabFourth.removeClass( 'active-tab is-active' );
 
 
 				$navTabFirst.removeClass( 'active-nav-tab' );
 				$navTabThird.removeClass( 'active-nav-tab' );
 				$navTabFourth.removeClass( 'active-nav-tab' );
+
+				// $tabs.foundation('selectTab', 'panel2');
+
+				// $tabSecond.addClass( 'active-tab is-active' );
+				// $navTabSecond.addClass( 'active-nav-tab' );
+
+				// $tabFirst.removeClass( 'active-tab' );
+				// $tabThird.removeClass( 'active-tab' );
+				// $tabFourth.removeClass( 'active-tab' );
+
+
+				// $navTabFirst.removeClass( 'active-nav-tab' );
+				// $navTabThird.removeClass( 'active-nav-tab' );
+				// $navTabFourth.removeClass( 'active-nav-tab' );
 			})
 
 			$tabThird.add( $navTabThird ).on( 'click', () => {
@@ -155,18 +194,34 @@
 
 				$changeURL.attr( 'href', 'https://segurosmeds.metlife.cl/VentaWeb/Formulario/MedsCatastroficoLA' );
 
-				$tabs.foundation('selectTab', 'panel3');
+				$panel1.removeClass( 'is-active' );
+				$panel2.removeClass( 'is-active' );
+				$panel3.addClass( 'is-active' );
+				$panel4.removeClass( 'is-active' );
 
-				$tabThird.addClass( 'active-tab' );
+				$tabThird.addClass( 'active-tab is-active' );
 				$navTabThird.addClass( 'active-nav-tab' );
 
-				$tabFirst.removeClass( 'active-tab' );
-				$tabSecond.removeClass( 'active-tab' );
-				$tabFourth.removeClass( 'active-tab' );
+				$tabFirst.removeClass( 'active-tab is-active' );
+				$tabSecond.removeClass( 'active-tab is-active' );
+				$tabFourth.removeClass( 'active-tab is-active' );
 
 				$navTabFirst.removeClass( 'active-nav-tab' );
 				$navTabSecond.removeClass( 'active-nav-tab' );
 				$navTabFourth.removeClass( 'active-nav-tab' );
+
+				// $tabs.foundation('selectTab', 'panel3');
+
+				// $tabThird.addClass( 'active-tab is-active' );
+				// $navTabThird.addClass( 'active-nav-tab' );
+
+				// $tabFirst.removeClass( 'active-tab' );
+				// $tabSecond.removeClass( 'active-tab' );
+				// $tabFourth.removeClass( 'active-tab' );
+
+				// $navTabFirst.removeClass( 'active-nav-tab' );
+				// $navTabSecond.removeClass( 'active-nav-tab' );
+				// $navTabFourth.removeClass( 'active-nav-tab' );
 			})
 
 			$tabFourth.add( $navTabFourth ).on( 'click', () => {
@@ -185,18 +240,34 @@
 
 				$changeURL.attr( 'href', 'https://segurosmeds.metlife.cl/VentaWeb/Formulario/MedsLA' );
 
-				$tabs.foundation('selectTab', 'panel4');
+				$panel1.removeClass( 'is-active' );
+				$panel2.removeClass( 'is-active' );
+				$panel3.removeClass( 'is-active' );
+				$panel4.addClass( 'is-active' );
 
-				$tabFourth.addClass( 'active-tab' );
+				$tabFourth.addClass( 'active-tab is-active' );
 				$navTabFourth.addClass( 'active-nav-tab' );
 
-				$tabFirst.removeClass( 'active-tab' );
-				$tabSecond.removeClass( 'active-tab' );
-				$tabThird.removeClass( 'active-tab' );
+				$tabFirst.removeClass( 'active-tab is-active' );
+				$tabSecond.removeClass( 'active-tab is-active' );
+				$tabThird.removeClass( 'active-tab is-active' );
 
 				$navTabFirst.removeClass( 'active-nav-tab' );
 				$navTabSecond.removeClass( 'active-nav-tab' );
 				$navTabThird.removeClass( 'active-nav-tab' );
+
+				// $tabs.foundation('selectTab', 'panel4');
+
+				// $tabFourth.addClass( 'active-tab is-active' );
+				// $navTabFourth.addClass( 'active-nav-tab' );
+
+				// $tabFirst.removeClass( 'active-tab' );
+				// $tabSecond.removeClass( 'active-tab' );
+				// $tabThird.removeClass( 'active-tab' );
+
+				// $navTabFirst.removeClass( 'active-nav-tab' );
+				// $navTabSecond.removeClass( 'active-nav-tab' );
+				// $navTabThird.removeClass( 'active-nav-tab' );
 			})
 
 			function totalPrice( UF ) {
