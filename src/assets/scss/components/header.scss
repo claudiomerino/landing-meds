@@ -107,6 +107,14 @@
 		display: none !important;
 	}
 
+	.header__sub-nav__list {
+		&:last-of-type {
+			a {
+				border: 0 !important;
+			}
+		}
+	}
+
 	.header__row {
 		position: relative;
 	}
@@ -120,7 +128,7 @@
 		.header__columns {
 			&:first-of-type {
 				margin: 0 auto;
-				max-width: 380px;
+				max-width: 250px;
 			}
 
 			&:nth-of-type( 2 ) {
@@ -142,7 +150,7 @@
 		}
 
 		.header__list-item {
-			padding-right: 2rem;
+			padding-right: 1rem;
 			a {
 				display: inline;
 			}
@@ -180,7 +188,6 @@
 			color: white;
 			cursor: pointer;
 			font-size: 14px;
-			padding: 6px 10px;
 			text-transform: uppercase;
 			width: 244px !important;
 			&.active-nav-tab {

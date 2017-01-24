@@ -88,13 +88,16 @@
 
 	@media screen and ( min-width: 62em ) {
 
+		.tabs__coverage {
+			padding-top: 3rem;
+		}
 
 		.tabs__coverage__list {
 			padding: 0 0 2rem;
 		}
 
 		.tabs__features__container {
-			padding: 0 3rem 3rem 3rem;
+			padding: 0 3rem;
 		}
 
 		.tabs__heading__container {
