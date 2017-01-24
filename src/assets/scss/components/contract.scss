@@ -9,6 +9,13 @@
 		margin-bottom: 2rem;
 	}
 
+	.contract__intro__price__amount {
+		i {
+			color: #333;
+			top: 0;
+		}
+	}
+
 	.contract__padding__lateral{
 		padding: 10px 30px;
 		h3 {
@@ -40,7 +47,7 @@
 	}
 
 	.contract__list {
-		margin-top: 3rem;
+		margin-top: 2rem;
 	}
 
 	.contract__title {
@@ -69,7 +76,13 @@
 
 	@media screen and ( min-width: 40em ) {
 		.contract__container {
-			padding: 3rem 0;
+			padding: 2rem 0;
+		}
+
+		.contract__intro__price__amount {
+			i {
+				top: -13px;
+			}
 		}
 
 		.contract__padding__lateral {
@@ -79,7 +92,7 @@
 		}
 
 		.tabs__contract {
-			margin-bottom: 3rem;
+			margin-bottom: 2rem;
 		}
 
 	}

@@ -1,6 +1,6 @@
 
 	.insurability {
-		padding: 3rem 0;
+		padding: 2rem 0;
 	}
 
 	.flex-video iframe, .flex-video object, .flex-video embed, .flex-video video {
@@ -94,12 +94,16 @@
 			text-align: center;
 		}
 
+		.insurability__box__desc {
+			min-height: 50px;
+		}
+
 		.insurability__description {
-			margin-bottom: 2rem;
+			margin-bottom: 16px;
 		}
 
 		.insurability__row {
-			margin: 3rem auto;
+			margin: 2rem auto;
 			max-width: 800px;
 			.columns {
 				&:first-of-type {
@@ -113,6 +117,10 @@
 	@media screen and ( min-width: 62em ) {
 
 		.insurability__features {
+<<<<<<< HEAD
 			padding: 0 3rem;
+=======
+			padding: 2rem;
+>>>>>>> 0f9947710b188aa524252c6549a0daeca8a7e7b1
 		}
 	}
